@@ -1,0 +1,35 @@
+{
+	"name": "better-password",
+	"version": "1.0.0",
+	"author": "Marcel Losso",
+	"description": "Custom password validation for better-auth",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"test": "vitest",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"format": "biome format --write .",
+		"tsc": "tsc --noEmit",
+		"prepublishOnly": "pnpm run build"
+	},
+	"keywords": [
+		"better-auth",
+		"password",
+		"validation",
+		"authentication"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/marcellosso/better-password",
+	"packageManager": "pnpm@10.13.1",
+	"dependencies": {
+		"@biomejs/biome": "^2.1.2",
+		"tsup": "^8.5.0"
+	}
+}
