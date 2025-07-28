@@ -1,5 +1,5 @@
 import { BetterAuthPlugin } from "better-auth";
-import type { BetterPasswordOptions } from "./types";
+import type { BetterPasswordOptions, PasswordValidator } from "./types";
 import { validatePassword } from "./utils";
 
 export const betterPassword = (options: BetterPasswordOptions) => {
@@ -20,3 +20,5 @@ export const betterPassword = (options: BetterPasswordOptions) => {
 		},
 	} satisfies BetterAuthPlugin;
 };
+
+export type { BetterPasswordOptions, PasswordValidator };
