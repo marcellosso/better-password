@@ -1,5 +1,5 @@
 import { APIError } from "better-auth/api";
-import type { PasswordValidator } from "./types";
+import type { PasswordValidator } from "../types";
 
 export const validatePassword = (
 	password: string,
